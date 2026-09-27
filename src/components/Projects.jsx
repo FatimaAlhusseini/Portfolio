@@ -147,6 +147,7 @@ export default function Projects() {
                       width: '100%',
                       height: '100%',
                       objectFit: 'cover',
+                      objectPosition: 'top center',
                       transition: 'transform 0.5s ease',
                     }}
                     className="project-card-image"
@@ -292,26 +293,30 @@ export default function Projects() {
                     </span>
 
                     <div style={{ display: 'flex', gap: '0.5rem' }} onClick={(e) => e.stopPropagation()}>
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn-icon"
-                        style={{ width: '34px', height: '34px' }}
-                        title="Source Code"
-                      >
-                        <GithubIcon size={15} />
-                      </a>
-                      <a
-                        href={project.demoUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn-icon"
-                        style={{ width: '34px', height: '34px' }}
-                        title="Live Preview"
-                      >
-                        <ExternalLink size={15} />
-                      </a>
+                      {project.githubUrl && (
+                        <a
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn-icon"
+                          style={{ width: '34px', height: '34px' }}
+                          title="Source Code"
+                        >
+                          <GithubIcon size={15} />
+                        </a>
+                      )}
+                      {project.demoUrl && (
+                        <a
+                          href={project.demoUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn-icon"
+                          style={{ width: '34px', height: '34px' }}
+                          title="Live Preview"
+                        >
+                          <ExternalLink size={15} />
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>

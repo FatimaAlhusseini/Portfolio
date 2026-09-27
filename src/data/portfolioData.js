@@ -141,21 +141,21 @@ export const projects = [
     title: "InsightCV – Job Portal with AI Enhancement",
     category: "Full Stack",
     description:
-      "Full-stack job portal system with AI features to improve CV matching and job recommendations. Developed as a graduation project.",
+      "Full-stack job portal system connecting job seekers, employers, and admins with dynamic resume generation and AI features.",
     longDescription:
-      "InsightCV is a graduation project — a full-stack job portal with AI-enhanced features. The system includes job management, applications, CV-related features, AI interview assistance, chatbot functionality, CV matching, and fraud detection. The frontend uses React and Vite, while the backend uses ASP.NET Core 8 with Entity Framework Core and SQL Server.",
+      "InsightCV is a graduation project — a full-stack job recruitment platform connecting job seekers, employers, and administrators. Built with a React (Vite) frontend featuring custom Glassmorphism and RTL/multi-language support, and a scalable ASP.NET Core 8 Web API backend with Entity Framework Core and SQL Server.",
     image:
-      "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=80",
-    tags: ["React", "Vite", "ASP.NET Core 8", "Entity Framework Core", "SQL Server", "JWT", "AI"],
+      "/projects/insightcv-cover.png",
+    tags: ["React (Vite)", "ASP.NET Core 8", "Entity Framework Core", "SQL Server", "React Query", "AI"],
     demoUrl: "",
-    githubUrl: "",
+    githubUrl: "https://github.com/FatimaAlhusseini/GraduationProject",
     featured: true,
     highlights: [
-      "Participated in system analysis and full database design",
-      "Developed job portal with separate Job Seeker, Company, and Admin experiences",
-      "Integrated AI-powered CV matching and job recommendations",
-      "Applied web development technologies and database concepts throughout",
-      "Collaborated with team members across the full project lifecycle"
+      "Designed full relational schema and RESTful Web API endpoints in ASP.NET Core 8",
+      "Built multi-role architecture for Job Seekers, Employers, and Admins",
+      "Implemented dynamic resume builder and application tracking features",
+      "Crafted responsive modern frontend with React Query, Context API, and RTL support",
+      "Integrated AI capabilities for CV matching and recommendations"
     ]
   },
   {

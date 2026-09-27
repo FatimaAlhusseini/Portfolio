@@ -29,7 +29,8 @@ export default function ProjectModal({ project, onClose }) {
               width: '100%',
               height: '100%',
               objectFit: 'cover',
-              filter: 'brightness(0.7)',
+              objectPosition: 'top center',
+              filter: 'brightness(0.85)',
             }}
           />
           <div
@@ -129,26 +130,32 @@ export default function ProjectModal({ project, onClose }) {
           </div>
 
           {/* Action CTAs */}
-          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', paddingTop: '1.25rem', borderTop: '1px solid var(--border-glass)' }}>
-            <a
-              href={project.demoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-primary"
-            >
-              <ExternalLink size={16} />
-              <span>Live Demonstration</span>
-            </a>
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-secondary"
-            >
-              <GithubIcon size={16} />
-              <span>View Source Code</span>
-            </a>
-          </div>
+          {(project.demoUrl || project.githubUrl) && (
+            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', paddingTop: '1.25rem', borderTop: '1px solid var(--border-glass)' }}>
+              {project.demoUrl && (
+                <a
+                  href={project.demoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary"
+                >
+                  <ExternalLink size={16} />
+                  <span>Live Demonstration</span>
+                </a>
+              )}
+              {project.githubUrl && (
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={project.demoUrl ? "btn btn-secondary" : "btn btn-primary"}
+                >
+                  <GithubIcon size={16} />
+                  <span>View Source Code</span>
+                </a>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </div>
