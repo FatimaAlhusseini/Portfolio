@@ -18,7 +18,8 @@ export const Hero = ({ onOpenResume }) => {
   const [typingSpeed, setTypingSpeed] = useState(100);
 
   useEffect(() => {
-    const currentTitle = dynamicTitles[titleIndex];
+    const currentTitle = dynamicTitles[titleIndex] || '';
+    if (!currentTitle) return;
 
     const timer = setTimeout(() => {
       if (!isDeleting) {

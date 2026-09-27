@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
-import { Mail, MapPin, Send, Check, Copy, Clock, MessageSquare, Sparkles } from 'lucide-react';
+import { Mail, MapPin, Send, Check, Copy, Clock, MessageSquare, Sparkles, AlertCircle } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import emailjs from '@emailjs/browser';
 import { personalInfo } from '../data/portfolioData';
+
+const EMAILJS_SERVICE_ID = 'service_csvdrru';
+const EMAILJS_TEMPLATE_ID = 'template_jj5ujh7';
+const EMAILJS_PUBLIC_KEY = 'kQw6XqXPhM_7e80tC';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -14,6 +19,7 @@ export default function Contact() {
   const [copied, setCopied] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(personalInfo.email);
@@ -21,12 +27,27 @@ export default function Contact() {
     setTimeout(() => setCopied(false), 2500);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setErrorMessage('');
 
-    // Simulate sending
-    setTimeout(() => {
+    try {
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        reply_to: formData.email,
+      };
+
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        templateParams,
+        EMAILJS_PUBLIC_KEY
+      );
+
       setIsSubmitting(false);
       setSubmitted(true);
 
@@ -37,7 +58,13 @@ export default function Contact() {
         origin: { y: 0.6 },
         colors: ['#6366f1', '#06b6d4', '#a855f7', '#10b981'],
       });
-    }, 900);
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      setIsSubmitting(false);
+      setErrorMessage(
+        error?.text || 'حدث خطأ أثناء إرسال الرسالة، يرجى المحاولة مرة أخرى أو مراسلتي مباشرة عبر البريد الإلكتروني.'
+      );
+    }
   };
 
   return (
@@ -311,6 +338,25 @@ export default function Contact() {
                     }}
                   />
                 </div>
+
+                {errorMessage && (
+                  <div
+                    style={{
+                      padding: '0.85rem 1rem',
+                      borderRadius: 'var(--radius-md)',
+                      background: 'rgba(239, 68, 68, 0.1)',
+                      border: '1px solid rgba(239, 68, 68, 0.3)',
+                      color: '#ef4444',
+                      fontSize: '0.88rem',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.6rem',
+                    }}
+                  >
+                    <AlertCircle size={18} style={{ flexShrink: 0 }} />
+                    <span>{errorMessage}</span>
+                  </div>
+                )}
 
                 <button
                   type="submit"
