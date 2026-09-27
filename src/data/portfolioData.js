@@ -7,7 +7,7 @@ export const personalInfo = {
   availability: "Open to Web Development & Software Engineering opportunities",
   email: "fatimahusseini192@gmail.com",
   phone: "+962781884506",
-  github: "https://github.com",
+  github: "https://github.com/FatimaAlhusseini",
   linkedin: "https://linkedin.com/in/fatima-al-husseini-0a02601bb/",
   twitter: "",
 
@@ -27,10 +27,10 @@ export const personalInfo = {
   languages: ["Arabic", "English"],
 
   stats: [
-    { label: "Backend",    value: "ASP.NET",   icon: "Server"   },
-    { label: "Frontend",   value: "React",     icon: "Layout"   },
-    { label: "Database",   value: "SQL Server", icon: "Database" },
-    { label: "Reporting",  value: "SSRS & BI",  icon: "BarChart2" }
+    { label: "Backend", value: "ASP.NET", icon: "Server" },
+    { label: "Frontend", value: "React", icon: "Layout" },
+    { label: "Database", value: "SQL Server", icon: "Database" },
+    { label: "Reporting", value: "SSRS & BI", icon: "BarChart2" }
   ],
 
   pillars: [
@@ -67,45 +67,45 @@ export const skillsData = {
     {
       name: "Backend & APIs",
       skills: [
-        { name: "ASP.NET / ASP.NET Core MVC", level: 82, popular: true  },
-        { name: "C#",                          level: 78, popular: true  },
-        { name: "REST APIs & DTOs",            level: 78, popular: true  },
-        { name: "Custom Middlewares",           level: 72, popular: false },
-        { name: "Basic Authentication",         level: 70, popular: false },
-        { name: "Rate Limiting",               level: 68, popular: false }
+        { name: "ASP.NET / ASP.NET Core MVC", level: 82, popular: true },
+        { name: "C#", level: 78, popular: true },
+        { name: "REST APIs & DTOs", level: 78, popular: true },
+        { name: "Custom Middlewares", level: 72, popular: false },
+        { name: "Basic Authentication", level: 70, popular: false },
+        { name: "Rate Limiting", level: 68, popular: false }
       ]
     },
     {
       name: "Frontend & UI",
       skills: [
-        { name: "HTML5 & CSS3",               level: 85, popular: true  },
-        { name: "JavaScript",                  level: 75, popular: true  },
-        { name: "React",                       level: 75, popular: true  },
-        { name: "Bootstrap",                   level: 78, popular: true  },
-        { name: "Responsive Design",           level: 80, popular: true  },
+        { name: "HTML5 & CSS3", level: 85, popular: true },
+        { name: "JavaScript", level: 75, popular: true },
+        { name: "React", level: 75, popular: true },
+        { name: "Bootstrap", level: 78, popular: true },
+        { name: "Responsive Design", level: 80, popular: true },
         { name: "Multi-language Localization", level: 72, popular: false }
       ]
     },
     {
       name: "Databases",
       skills: [
-        { name: "SQL Server",            level: 85, popular: true  },
-        { name: "Oracle DB",             level: 72, popular: true  },
-        { name: "Stored Procedures",     level: 80, popular: true  },
-        { name: "Triggers & Functions",  level: 75, popular: false },
+        { name: "SQL Server", level: 85, popular: true },
+        { name: "Oracle DB", level: 72, popular: true },
+        { name: "Stored Procedures", level: 80, popular: true },
+        { name: "Triggers & Functions", level: 75, popular: false },
         { name: "Database Transactions", level: 74, popular: false },
-        { name: "Database Design",       level: 80, popular: true  }
+        { name: "Database Design", level: 80, popular: true }
       ]
     },
     {
       name: "Reporting & Tools",
       skills: [
-        { name: "Power BI",   level: 70, popular: true  },
-        { name: "SSRS",       level: 72, popular: true  },
+        { name: "Power BI", level: 70, popular: true },
+        { name: "SSRS", level: 72, popular: true },
         { name: "IIS Server", level: 68, popular: false },
-        { name: "Git & GitHub", level: 75, popular: true  },
-        { name: "Postman",    level: 72, popular: true  },
-        { name: "OOP",        level: 78, popular: true  }
+        { name: "Git & GitHub", level: 75, popular: true },
+        { name: "Postman", level: 72, popular: true },
+        { name: "OOP", level: 78, popular: true }
       ]
     }
   ]
