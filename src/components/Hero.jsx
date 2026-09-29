@@ -7,7 +7,7 @@ import profilePhoto from '../assets/profile.jpg';
 const dynamicTitles = [
   "Web Developer",
   "ASP.NET Core Developer",
-  "React Specialist",
+  "Quality Assurance-Tester",
   "Full Stack Developer",
 ];
 
