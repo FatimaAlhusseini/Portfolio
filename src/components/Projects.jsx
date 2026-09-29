@@ -4,8 +4,7 @@ import { GithubIcon } from './Icons';
 import { projects } from '../data/portfolioData';
 import ProjectModal from './ProjectModal';
 
-const categories = ['All', 'Full Stack', 'AI & ML', 'Cloud / Backend', 'Frontend / UI'];
-
+const categories = ['All', 'Full Stack', 'ASP.NET Core MVC', 'Frontend / UI'];
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');

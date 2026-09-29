@@ -193,7 +193,7 @@ export const Hero = ({ onOpenResume }) => {
               animation: 'float-badge-right 4s ease-in-out infinite alternate',
             }}>
               <Code2 size={16} style={{ color: 'var(--secondary)' }} />
-              <span style={{ fontSize: '0.82rem', fontWeight: 600 }}>React & SQL Server</span>
+              <span style={{ fontSize: '0.82rem', fontWeight: 600 }}>QA Engineer  </span>
             </div>
           </div>
 

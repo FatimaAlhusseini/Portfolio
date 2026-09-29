@@ -4,7 +4,7 @@ export const personalInfo = {
   tagline:
     "CIS student with hands-on experience building full-stack web applications using ASP.NET Core, React, and SQL Server.",
   location: "Jordan",
-  availability: "Open to Web Development & Software Engineering opportunities",
+  availability: "Open to Web Development , Software Engineering & QA Manual opportunities",
   email: "fatimahusseini192@gmail.com",
   phone: "+962781884506",
   github: "https://github.com/FatimaAlhusseini",
@@ -80,7 +80,7 @@ export const skillsData = {
       skills: [
         { name: "HTML5 & CSS3", level: 85, popular: true },
         { name: "JavaScript", level: 75, popular: true },
-        { name: "React", level: 75, popular: true },
+        { name: "React", level: 50, popular: true },
         { name: "Bootstrap", level: 78, popular: true },
         { name: "Responsive Design", level: 80, popular: true },
         { name: "Multi-language Localization", level: 72, popular: false }
@@ -90,7 +90,7 @@ export const skillsData = {
       name: "Databases",
       skills: [
         { name: "SQL Server", level: 85, popular: true },
-        { name: "Oracle DB", level: 72, popular: true },
+        { name: "postgreSQL", level: 72, popular: true },
         { name: "Stored Procedures", level: 80, popular: true },
         { name: "Triggers & Functions", level: 75, popular: false },
         { name: "Database Transactions", level: 74, popular: false },
@@ -131,7 +131,28 @@ export const experiences = [
       "ASP.NET Core MVC", "C#", "SQL Server", "Oracle DB",
       "REST APIs", "Power BI", "SSRS", "IIS", "Git", "JavaScript", "HTML", "CSS"
     ]
-  }
+  },{
+  role: "Software QA Trainee",
+  company: "Dalil Jordan",
+  period: "Jul 2026 – Present",
+  location: "Jordan",
+  description:
+    "Currently undergoing practical training in software quality assurance and testing, with hands-on experience in manual testing, API testing, test case design, and defect tracking.",
+  achievements: [
+    "Writing and organizing test cases based on user stories and acceptance criteria",
+    "Performing manual testing for web application features",
+    "Testing REST APIs using Postman",
+    "Working with Jira and Zephyr for test management and defect tracking"
+  ],
+  technologies: [
+    "Database Testing",
+    "Manual Testing",
+    "API Testing",
+    "Postman",
+    "Jira",
+    "Zephyr"
+  ]
+}
 ];
 
 
@@ -167,7 +188,7 @@ export const projects = [
     longDescription:
       "Built during practical training at the Royal Scientific Society. An ASP.NET Core MVC task management system deployed on IIS with a complete backend including authentication, profile image handling, rate-limiting, request sanitization, automated file verification, and advanced reporting.",
     image:
-      "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=1200&q=80",
+      "src/assets/taskSystem.PNG",
     tags: ["ASP.NET Core MVC", "C#", "SQL Server", "IIS", "SSRS", "Power BI", "JavaScript"],
     demoUrl: "",
     githubUrl: "",
@@ -179,7 +200,61 @@ export const projects = [
       "Daily SQL Server scheduled jobs for automated task processing",
       "Responsive dashboards using SSRS and Power BI with custom HTML content visuals"
     ]
-  }
+  },
+  {
+  id: "htmlmiddleware",
+  title: "HTML Middleware MVC",
+  category: "ASP.NET Core MVC",
+  description:
+    "ASP.NET Core MVC application demonstrating custom middleware for processing and handling HTML content within the web request pipeline.",
+  longDescription:
+    "A practical ASP.NET Core MVC project focused on implementing and working with custom middleware within the HTTP request pipeline. The project demonstrates how middleware can intercept and process requests and responses while working within an MVC application.",
+  image:
+    "src/assets/middleware.jpg",
+  tags: [
+    "ASP.NET Core MVC",
+    "C#",
+    "Custom Middleware",
+    "HTML",
+    "HTTP Pipeline"
+  ],
+  demoUrl: "",
+  githubUrl: "https://github.com/FatimaAlhusseini/HtmlMiddlewareMVC",
+  featured: false,
+  highlights: [
+    "Implemented custom ASP.NET Core middleware",
+    "Worked with the HTTP request and response pipeline",
+    "Integrated middleware within an MVC application",
+    "Applied C# and ASP.NET Core development concepts"
+  ]
+},
+{
+  id: "searchfilessystem",
+  title: "Search Files System",
+  category: "ASP.NET Core MVC",
+  description:
+    "ASP.NET Core application for searching and working with files through a web-based interface.",
+  longDescription:
+    "A .NET-based file search system designed to provide a web interface for searching files and working with file-system data. The project focuses on backend file-system operations and integrating them into an ASP.NET application.",
+  image:
+    "src/assets/fileSearch.PNG",
+  tags: [
+    "ASP.NET Core",
+    "C#",
+    "File System",
+    "Search",
+    "MVC"
+  ],
+  demoUrl: "",
+  githubUrl: "https://github.com/FatimaAlhusseini/SearchFilesSystem",
+  featured: false,
+  highlights: [
+    "Implemented file-system search functionality",
+    "Worked with C# file and directory operations",
+    "Built a web-based interface for file searching",
+    "Applied ASP.NET development concepts"
+  ]
+}
 ];
 
 
