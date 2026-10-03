@@ -1,3 +1,8 @@
+import insightcvCover from "../assets/insightcv-cover.png";
+import taskSystem from "../assets/taskSystem.PNG";
+import middleware from "../assets/middleware.jpg";
+import fileSearch from "../assets/fileSearch.PNG";
+
 export const personalInfo = {
   name: "Fatima Al-Husseini",
   title: "Web Developer | ASP.NET Core",
@@ -178,8 +183,7 @@ export const projects = [
       "Full-stack job portal system connecting job seekers, employers, and admins with dynamic resume generation and AI features.",
     longDescription:
       "InsightCV is a graduation project — a full-stack job recruitment platform connecting job seekers, employers, and administrators. Built with a React (Vite) frontend featuring custom Glassmorphism and RTL/multi-language support, and an ASP.NET Core 8 Web API backend with Entity Framework Core and SQL Server.",
-    image:
-      "/projects/insightcv-cover.png",
+    image: insightcvCover,
     tags: [
       "React (Vite)",
       "ASP.NET Core 8",
@@ -208,8 +212,7 @@ export const projects = [
       "Full-stack task management web application deployed on IIS with authentication, reporting, and automated file verification.",
     longDescription:
       "Built during practical training at the Royal Scientific Society. An ASP.NET Core MVC task management system deployed on IIS with a complete backend including authentication, profile image handling, rate limiting, request sanitization, automated file verification, and advanced reporting.",
-    image:
-      "/projects/taskSystem.PNG",
+    image: taskSystem,
     tags: [
       "ASP.NET Core MVC",
       "C#",
@@ -239,8 +242,7 @@ export const projects = [
       "ASP.NET Core MVC application demonstrating custom middleware for processing and handling HTML content within the web request pipeline.",
     longDescription:
       "A practical ASP.NET Core MVC project focused on implementing and working with custom middleware within the HTTP request pipeline. The project demonstrates how middleware can intercept and process requests and responses while working within an MVC application.",
-    image:
-      "/projects/middleware.jpg",
+    image: middleware,
     tags: [
       "ASP.NET Core MVC",
       "C#",
@@ -267,8 +269,7 @@ export const projects = [
       "ASP.NET Core application for searching and working with files through a web-based interface.",
     longDescription:
       "A .NET-based file search system designed to provide a web interface for searching files and working with file-system data. The project focuses on backend file-system operations and integrating them into an ASP.NET application.",
-    image:
-      "/projects/fileSearch.PNG",
+    image: fileSearch,
     tags: [
       "ASP.NET Core",
       "C#",
