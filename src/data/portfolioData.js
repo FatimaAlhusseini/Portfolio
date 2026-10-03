@@ -209,7 +209,7 @@ export const projects = [
     longDescription:
       "Built during practical training at the Royal Scientific Society. An ASP.NET Core MVC task management system deployed on IIS with a complete backend including authentication, profile image handling, rate limiting, request sanitization, automated file verification, and advanced reporting.",
     image:
-      "src/assets/taskSystem.PNG",
+      "/projects/taskSystem.PNG",
     tags: [
       "ASP.NET Core MVC",
       "C#",
@@ -240,7 +240,7 @@ export const projects = [
     longDescription:
       "A practical ASP.NET Core MVC project focused on implementing and working with custom middleware within the HTTP request pipeline. The project demonstrates how middleware can intercept and process requests and responses while working within an MVC application.",
     image:
-      "src/assets/middleware.jpg",
+      "/projects/middleware.jpg",
     tags: [
       "ASP.NET Core MVC",
       "C#",
@@ -268,7 +268,7 @@ export const projects = [
     longDescription:
       "A .NET-based file search system designed to provide a web interface for searching files and working with file-system data. The project focuses on backend file-system operations and integrating them into an ASP.NET application.",
     image:
-      "src/assets/fileSearch.PNG",
+      "/projects/fileSearch.PNG",
     tags: [
       "ASP.NET Core",
       "C#",
