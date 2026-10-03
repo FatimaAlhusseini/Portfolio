@@ -7,7 +7,7 @@ export const personalInfo = {
   name: "Fatima Al-Husseini",
   title: "Web Developer | ASP.NET Core",
   tagline:
-    "CIS graduate with hands-on experience building web applications using ASP.NET Core, React, and SQL Server.",
+    "Building modern web applications with ASP.NET Core, React, and SQL Server, with hands-on experience in full-stack development and RESTful APIs.",
   location: "Jordan",
   availability:
     "Open to Web Development & Software Engineering opportunities",

@@ -80,7 +80,8 @@ export default function Contact() {
             Let's Build Something <span className="gradient-text">Exceptional</span>
           </h2>
           <p className="section-subtitle">
-            Have a project in mind, an engineering role open, or want to discuss system architecture? My inbox is always open.
+           Have a project in mind, a web development opportunity, or just want to connect? I’d love to hear from you. Feel free to reach out anytime.
+
           </p>
         </div>
 

@@ -66,7 +66,8 @@ export default function Footer() {
               </span>
             </div>
             <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', maxWidth: '320px' }}>
-              Full Stack Software Engineer & Cloud Architect. Building scalable systems and digital experiences.
+              Web Developer specializing in ASP.NET Core, React, and SQL Server. Building modern, reliable, and user-friendly web applications.
+
             </p>
           </div>
 
