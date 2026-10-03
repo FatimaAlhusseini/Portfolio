@@ -109,7 +109,15 @@ export default function Contact() {
                     justifyContent: 'space-between',
                   }}
                 >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
+                  <div
+  style={{
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.85rem',
+    minWidth: 0,
+    flex: 1,
+  }}
+>
                     <div
                       style={{
                         width: '38px',
@@ -126,7 +134,15 @@ export default function Contact() {
                     </div>
                     <div>
                       <div style={{ fontSize: '0.75rem', color: 'var(--text-dim)' }}>Direct Email</div>
-                      <div style={{ fontSize: '0.95rem', fontWeight: 600 }}>{personalInfo.email}</div>
+                      <div
+  style={{
+    fontSize: '0.95rem',
+    fontWeight: 600,
+    overflowWrap: 'anywhere',
+  }}
+>
+  {personalInfo.email}
+</div>
                     </div>
                   </div>
 
@@ -380,15 +396,58 @@ export default function Contact() {
       </div>
 
       <style>{`
-        @media (max-width: 850px) {
-          .contact-grid {
-            grid-template-columns: 1fr !important;
-          }
-          .form-row {
-            grid-template-columns: 1fr !important;
-          }
-        }
-      `}</style>
+  .contact-grid,
+  .contact-grid * {
+    box-sizing: border-box;
+  }
+
+  .contact-grid input,
+  .contact-grid textarea {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  @media (max-width: 850px) {
+    .contact-grid {
+      grid-template-columns: 1fr !important;
+    }
+
+    .form-row {
+      grid-template-columns: 1fr !important;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .contact-grid {
+      gap: 1.25rem !important;
+    }
+
+    .contact-grid .glass-panel {
+      padding: 1.25rem !important;
+    }
+
+    .contact-grid form {
+      gap: 1rem !important;
+    }
+
+    .contact-grid input,
+    .contact-grid textarea {
+      width: 100% !important;
+      font-size: 0.9rem !important;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .contact-grid .glass-panel {
+      padding: 1rem !important;
+    }
+
+    .contact-grid input,
+    .contact-grid textarea {
+      padding: 0.75rem 0.85rem !important;
+    }
+  }
+`}</style>
     </section>
   );
 }
