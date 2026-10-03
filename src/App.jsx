@@ -18,6 +18,10 @@ export default function App() {
   const [showResumeModal, setShowResumeModal] = useState(false);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
+  useEffect(() => {
     if (activeAccent === 'default') {
       document.documentElement.removeAttribute('data-accent');
     } else {
